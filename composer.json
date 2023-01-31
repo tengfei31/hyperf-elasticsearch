@@ -1,5 +1,5 @@
 {
-  "name": "janartist/elasticsearch",
+  "name": "tengfei31/elasticsearch",
   "description": "ES客户端",
   "require": {
     "php": ">=7.2",
