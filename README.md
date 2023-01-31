@@ -3,7 +3,7 @@
 ### Composer
 
 ```
-composer require janartist/elasticsearch
+composer require tengfei31/elasticsearch
 ```
 
 ### Model
