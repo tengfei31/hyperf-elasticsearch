@@ -4,8 +4,11 @@
   "require": {
     "php": ">=7.2",
     "hyperf/framework": "*",
+    "hyperf/guzzle": "*",
+    "hyperf/logger": "*",
     "hyperf/utils": "*",
-    "elasticsearch/elasticsearch": "^7.0"
+    "elasticsearch/elasticsearch": "^7.0",
+    "ext-json": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master"

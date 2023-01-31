@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Janartist\Elasticsearch;
 
 use Hyperf\Utils\Collection;
-use Hyperf\Utils\Contracts\Arrayable;
-use Hyperf\Utils\Contracts\Jsonable;
+use Hyperf\Contract\Arrayable;
+use Hyperf\Contract\Jsonable;
 use JsonSerializable;
 
 class Paginator implements Arrayable, JsonSerializable, Jsonable

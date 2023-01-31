@@ -9,7 +9,7 @@ namespace Janartist\Elasticsearch;
 
 use Elasticsearch\ClientBuilder;
 use Hyperf\Guzzle\RingPHP\PoolHandler;
-use Swoole\Coroutine;
+use Hyperf\Utils\Coroutine;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ContainerInterface;
 
@@ -34,14 +34,14 @@ class Client
      * @param string $group
      * @return \Elasticsearch\Client
      */
-    public function create($group = 'default')
+    public function create(string $group = 'default') :\Elasticsearch\Client
     {
         $config = $this->config[$group] ?? [];
         if (empty($config)) {
             throw new InvalidConfigException('elasticsearch config empty!');
         }
         $builder = ClientBuilder::create();
-        if (Coroutine::getCid() > 0) {
+        if (Coroutine::inCoroutine()) {
             $handler = make(PoolHandler::class, [
                 'option' => [
                     'max_connections' => $config['max_connections'] ?? 50,
