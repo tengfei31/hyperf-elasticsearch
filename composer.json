@@ -1,6 +1,7 @@
 {
   "name": "tengfei31/elasticsearch",
   "description": "ES客户端",
+  "minimum-stability": "v0.0.1",
   "require": {
     "php": ">=7.2",
     "hyperf/framework": "*",
@@ -15,8 +16,8 @@
   },
   "authors": [
     {
-      "name": "jan",
-      "email": "1688609@gmail.com"
+      "name": "tengfei",
+      "email": "776095293@qq.com"
     }
   ],
   "autoload": {
