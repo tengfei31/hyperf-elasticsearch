@@ -1,7 +1,7 @@
 {
   "name": "tengfei31/elasticsearch",
   "description": "ES客户端",
-  "minimum-stability": "v0.0.1",
+  "minimum-stability": "stable",
   "require": {
     "php": ">=7.2",
     "hyperf/framework": "*",
